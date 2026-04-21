@@ -1,0 +1,161 @@
+/* Reseteo básico para que los navegadores no agreguen márgenes por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo de la pantalla y tipo de letra general */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fuente sans-serif moderna */
+    background-color: #e0e0e0; /* Fondo gris claro detrás del CV */
+    display: flex;
+    justify-content: center; /* Centra el CV en la pantalla */
+    padding: 40px 20px;
+}
+
+/* El "papel" del Currículum */
+.contenedor-cv {
+    display: flex; /* Divide el contenedor en columnas */
+    width: 900px; /* Ancho fijo para simular hoja tamaño carta */
+    max-width: 100%;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Sombreado para que resalte */
+}
+
+/* --- COLUMNA IZQUIERDA --- */
+.columna-izquierda {
+    width: 35%; /* Ocupa el 35% del ancho */
+    background-color: #53807c; /* Color extraído de tu imagen (Verde/Azul grisáceo) */
+    color: #ffffff;
+    padding: 50px 30px;
+}
+
+.contenedor-foto {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilo para hacer la foto redonda y ponerle un borde */
+.foto-perfil {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%; /* Esto hace la imagen circular */
+    object-fit: cover; /* Evita que la foto se deforme */
+    border: 3px solid #ffffff; /* Borde blanco alrededor */
+}
+
+.seccion-izq {
+    margin-bottom: 35px;
+}
+
+.seccion-izq h2 {
+    font-size: 14px;
+    letter-spacing: 2px; /* Separación entre letras */
+    margin-bottom: 15px;
+}
+
+.lista-vinetas {
+    list-style-type: disc; /* Puntos de viñeta */
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.lista-vinetas li {
+    margin-bottom: 10px;
+}
+
+/* Sección de Contacto (Iconos) */
+.contacto ul {
+    list-style: none; /* Quitamos los puntos de viñeta aquí */
+    padding: 0;
+}
+
+.contacto li {
+    display: flex; /* Alinea icono y texto en la misma línea */
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.icono {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    /* Si los iconos que descargas son negros, puedes usar filtros CSS para volverlos blancos, 
+       pero lo ideal es que ya los guardes de color blanco en tu carpeta CV */
+}
+
+/* --- COLUMNA DERECHA --- */
+.columna-derecha {
+    width: 65%; /* Ocupa el resto del espacio (65%) */
+    padding: 50px 60px;
+    color: #333333;
+}
+
+.encabezado {
+    margin-bottom: 40px;
+}
+
+.encabezado h1 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+.encabezado h2 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 6px; /* Letras separadas como en la referencia */
+    color: #4a4a4a;
+    margin-top: 15px;
+}
+
+.seccion-der {
+    margin-bottom: 30px;
+}
+
+/* Los títulos con el bloque gris de fondo */
+.titulo-fondo {
+    background-color: #a4bebe; /* Gris/azulado claro extraído de la imagen */
+    color: #ffffff;
+    padding: 8px 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.seccion-der p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.experiencia-item {
+    margin-bottom: 25px;
+}
+
+.experiencia-item h4 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #000;
+}
+
+.experiencia-item .fecha-lugar {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.lista-experiencia {
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.lista-experiencia li {
+    margin-bottom: 5px;
+}
